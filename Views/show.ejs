@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> <%= pageTitle %> </title>
+</head>
+<body>
+    <h1>Student Details Page</h1>
+    <div>ID:<%= student.id %></div>
+    <div>Name:<%= student.name %> </div> 
+    <div>Email:<%= student.email %> </div>
+    <div>Address:<%= student.address.street %> </div>
+    <div><%= student.address.suite %> </div>
+    <div><%= student.address.city %> </div>
+
+    <a href="/index">Go to Student Directory</a>
+             
+</body>
+</html>
+ 
