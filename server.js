@@ -35,14 +35,14 @@
     });
 
   // display all students
-    app.get("/index", (req, res) => {
-      res.render("index", { data: studentsData, pageTitle: "Students Page" });
+    app.get("/learners", (req, res) => {
+      res.render("learners", { data: studentsData, pageTitle: "Students Page" });
     }); 
 
   
 
   // display one student
-  app.get("/index/:id", (req, res) => {
+  app.get("/learners/:id", (req, res) => {
   
     const result = studentsData.filter(item => item.id === Number( req.params.id))
     if (result[0] == undefined){
