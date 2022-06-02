@@ -34,14 +34,59 @@
       });
     });
 
-  // display all students
+  // display all students route 1
     app.get("/learners", (req, res) => {
-      res.render("learners", { data: studentsData, pageTitle: "Students Page" });
+      res.render("learners", { data: studentsData, pageTitle: "Students Page Route 1",pageHeader: "Students Page Route 1" });
     }); 
 
+    // display all students  route 2
+    app.get("/learners/route2", (req, res) => {
+      res.render("learners", { data: studentsData, pageTitle: "Students Page Route 2",pageHeader: "Students Route 2" });
+    }); 
   
+    // display all students  route 3
+    app.get("/learners/route3", (req, res) => {
+      res.render("learners", { data: studentsData, pageTitle: "Students Page Route 3",pageHeader: "Students Route 3" });
+    }); 
 
-  // display one student
+
+    // display all students  route 4
+    app.get("/learners/route4", (req, res) => {
+      res.render("learners", { data: studentsData, pageTitle: "Students Page Route 4",pageHeader: "Students Route 4" });
+    });     
+
+   // display all students  route 5
+   app.get("/learners/route5", (req, res) => {
+    res.render("learners", { data: studentsData, pageTitle: "Students Page Route 5",pageHeader: "Students Route 5" });
+   });     
+
+    // display all students  route 6
+   app.get("/learners/route6", (req, res) => {
+    res.render("learners", { data: studentsData, pageTitle: "Students Page Route 6",pageHeader: "Students Route 6" });
+   });     
+
+   // display all students  route 7
+   app.get("/learners/route7", (req, res) => {
+    res.render("learners", { data: studentsData, pageTitle: "Students Page Route 7",pageHeader: "Students Route 7" });
+   });     
+
+  // display all students  route 8
+  app.get("/learners/route8", (req, res) => {
+    res.render("learners", { data: studentsData, pageTitle: "Students Page Route 8",pageHeader: "Students Route 8" });
+   });     
+
+   // display all students  route 9
+  app.get("/learners/route9", (req, res) => {
+    res.render("learners", { data: studentsData, pageTitle: "Students Page Route 9",pageHeader: "Students Route 9" });
+   });     
+
+  // display all students  route 10
+  app.get("/learners/route10", (req, res) => {
+    res.render("learners", { data: studentsData, pageTitle: "Students Page Route 18",pageHeader: "Students Route 10" });
+   });     
+
+
+   // display one student
   app.get("/learners/:id", (req, res) => {
   
     const result = studentsData.filter(item => item.id === Number( req.params.id))
